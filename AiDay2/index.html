@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Replace your current CSP meta tag with this -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
+               connect-src 'self' http://localhost:3000; 
+               style-src 'self' 'unsafe-inline'; 
+               script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Gemini Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container" id="chatContainer">
+      <div class="welcome-screen">
+        <h1>Hello, how can I help?</h1>
+      </div>
+      <!-- Messages will appear here -->
+    </div>
+
+    <div class="input-area">
+      <div class="input-container">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter a prompt here..."
+          autocomplete="off" />
+        <button id="sendBtn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

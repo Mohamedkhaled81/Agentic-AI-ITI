@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+**/.env
+
+# Optional environment variants
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Other env files
+*.env
+**/.env*
+
+# Keep example env files
+!.env.example
+!**/.env.example
